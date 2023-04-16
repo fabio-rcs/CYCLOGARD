@@ -165,14 +165,14 @@ Project Link: [CYCLOGARD](https://github.com/fabio-rcs/CYCLOGARD)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://github.com/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
 [contributors-url]: https://github.com/fabio-rcs/CYCLOGARD/graphs/contributors
-[forks-shield]: https://github.com/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
 [forks-url]: https://github.com/fabio-rcs/CYCLOGARD/network/members
-[stars-shield]: https://github.com/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
 [stars-url]: https://github.com/fabio-rcs/CYCLOGARD/stargazers
-[issues-shield]: https://github.com/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
 [issues-url]: https://github.com/fabio-rcs/CYCLOGARD/issues
-[license-shield]: https://github.com/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
-[license-url]: https://github.com/fabio-rcs/CYCLOGARD/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
+[license-url]: https://github.com/fabio-rcs/CYCLOGARD/blob/master/license.txt
 [product-screenshot]: Docs/logo.png
