@@ -157,7 +157,7 @@ Project Link: [CYCLOGARD](https://github.com/fabio-rcs/CYCLOGARD)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* Professor Miguel Oliveira - mriem@ua.pt
+* Professor Vítor Santos - vitor@ua.pt
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
