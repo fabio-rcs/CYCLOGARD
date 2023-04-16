@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/fabio-rcs/CYCLOGARD">
-    <img src="Docs/logo.png" alt="Logo" width="80" height="80">
+    <img src="Docs/logo.png" alt="Logo" width="150" height="100">
   </a>
 
 <h3 align="center">CYCLOGARD</h3>
@@ -38,7 +38,7 @@
   <p align="center">
     Consists on the dectection of vehicles that doesn't respect the minimum safety distance from cyclists.
     <br />
-    <a https://github.com/fabio-rcs/CYCLOGARD/issues">Report Bug</a>
+    <a href="https://github.com/fabio-rcs/CYCLOGARD/issues">Report Bug</a>
     ·
     <a href="https://github.com/fabio-rcs/CYCLOGARD/issues">Request Feature</a>
   </p>
