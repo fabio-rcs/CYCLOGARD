@@ -29,23 +29,18 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/andrefdre/Dora_the_mug_finder_SAVI">
-    <img src="Docs/logo.svg" alt="Logo" width="80" height="80">
+  <a href="https://github.com/fabio-rcs/CYCLOGARD">
+    <img src="Docs/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Dora the Mug Finder</h3>
+<h3 align="center">CYCLOGARD</h3>
 
   <p align="center">
-    Consists on the implementation of a deep neural network to classify objects collected from 3D models or RGB-D cameras
+    Consists on the dectection of vehicles that doesn't respect the minimum safety distance from cyclists.
     <br />
-    <a href="https://github.com/andrefdre/Dora_the_mug_finder_SAVI/wiki"><strong>Explore the Wiki »</strong></a>
-    <br />
-    <br />
-    <a href="https://youtu.be/vULnTanHHmM">View Demo</a>
+    <a https://github.com/fabio-rcs/CYCLOGARD/issues">Report Bug</a>
     ·
-    <a href="https://github.com/andrefdre/Dora_the_mug_finder_SAVI/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/andrefdre/Dora_the_mug_finder_SAVI/issues">Request Feature</a>
+    <a href="https://github.com/fabio-rcs/CYCLOGARD/issues">Request Feature</a>
   </p>
 </div>
 
@@ -78,10 +73,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <div align="center">
-<img  src="Docs/logo.svg" alt="Logo" width="400">
+<img  src="Docs/logo.png" alt="Logo" width="400">
 </div>
-
-This project was developed for Advanced Industrial Vision Systems class for the second report. The objective is to detect and extract objects from a point cloud and then pass it through a classifier that will tell what the object is and some information about it's physical characteristics. For example, it's a Mug and has a certain bounding box.  
+For the class Automation Systems Project, we were challenged to create a system to help protect cyclists: a device that detects incoming cars and alerts the cyclist of a possible danger, is also able to alert the vehicle driver with a sound or light warning, as well as to use the smartphone through an app to take a picture of the license plate number of the car, when the driver doesn't respect the minimum safety distance. All the data is store using an SQL server.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,88 +99,20 @@ This project was developed for Advanced Industrial Vision Systems class for the 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This project uses [ROS Noetic](http://wiki.ros.org/ROS/Installation) to aid the use of the kinect camera and the object classification CNN is built based on [PyTorch](https://pytorch.org/). To do object detection is used [Open3D](http://www.open3d.org/).
+
 
 ### Prerequisites
 
-To use this code, first add the next line in the bashrc or your shell configuration file:
-
-  ```
-#Dora The Mug FInder
-export DORA=/home/andre/dora_the_mug_finder
-export PYTHONPATH="$PYTHONPATH:${HOME}/catkin_ws/src/Dora_the_mug_finder_SAVI"
-  ```
-Replace the path of DORA to where all the datasets are stored in your computer. You can download them [here](https://rgbd-dataset.cs.washington.edu/).
-
-Afterward, update the shell with the new configuration using:
-```
-source ~/.bashrc
-```
-If you use zsh, just change to *.zshrc*.
-
-Inside DORA folder, there should be a structure similar to:
-  - models
-  - rgbd-dataset
-  - rgbd-scenes-v2
-    - pc
-    - imgs
-  - rosbag
-
-
 
 ### Installation
-To install the project, clone the repository inside the *src* folder of your *catkin_ws*, running the following lines:
+To install the project, clone the repository using a GitHub manager or by running the following lines:
 ```
-git clone https://github.com/andrefdre/Dora_the_mug_finder_SAVI.git
-cd ..
-catkin_make
+git clone https://github.com/fabio-rcs/CYCLOGARD.git
 ```
-
-To install all the dependencies of this package, just run in your terminal:
-```
-roscd dora_the_mug_finder_bringup
-cd ..
-pip install -r requirements.txt
-```
-
-If you have/want to use a Kinect camera with this project, you can find [here](https://github.com/andrefdre/Dora_the_mug_finder_SAVI/wiki/Instalation#kinect) how to install all the dependencies needed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-### Train Model
-To Train the model, run the code:
-```
-rosrun dora_the_mug_finder_bringup model_train.py -fn <folder_name> -mn <model_name> -n_epochs 50 -batch_size 256 -c 0
-```
-
-Where the __*<folder_name>*__ and __*<model_name>*__  should be replaced by the names you want to give. 
-
-***
-### Run Object extractor and classifier
-To run the detector with previous trained model run the code:
-```
-roslaunch dora_the_mug_finder_bringup dora_bringup.launch mn:=<model_name> fn:=<folder_name>
-```
-Where the __*<folder_name>*__ and __*<model_name>*__ should be replaced by a name for the model previously set while training. 
-If you want to visualize extracted images run:
-```
-roslaunch dora_the_mug_finder_bringup dora_bringup.launch mn:=<model_name> fn:=<folder_name> visualize:=True
-```
-It's also possible to add the argument __*audio*__ to initialize audio describing the objects, setting it to true:
-```
-roslaunch dora_the_mug_finder_bringup dora_bringup.launch mn:=<model_name> fn:=<folder_name> audio:=true
-```
-
-***
-### Run Kinect
-It's also possible to use a kinect camera for processing in real time, by adding the __*kinect*__ argument:
-```
-roslaunch dora_the_mug_finder_bringup dora_bringup.launch mn:=<model_name> fn:=<folder_name> kinect:=true
-```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -216,13 +142,13 @@ Distributed under the GPL License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-André Cardoso - andref@ua.pt
-
-Tatiana Resende - tatianaresende@ua.pt
-
 Fábio Sousa - fabiorsousa81@ua.pt
 
-Project Link: [Dora the Mug Finder](https://github.com/andrefdre/Dora_the_mug_finder_SAVI)
+João Valinho - joao.valinho@ua.pt
+
+Nuno Pereira - nafonsofp@ua.pt
+
+Project Link: [CYCLOGARD](https://github.com/fabio-rcs/CYCLOGARD)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -239,14 +165,14 @@ Project Link: [Dora the Mug Finder](https://github.com/andrefdre/Dora_the_mug_fi
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/andrefdre/Dora_the_mug_finder_SAVI.svg?style=for-the-badge
-[contributors-url]: https://github.com/andrefdre/Dora_the_mug_finder_SAVI/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/andrefdre/Dora_the_mug_finder_SAVI.svg?style=for-the-badge
-[forks-url]: https://github.com/andrefdre/Dora_the_mug_finder_SAVI/network/members
-[stars-shield]: https://img.shields.io/github/stars/andrefdre/Dora_the_mug_finder_SAVI.svg?style=for-the-badge
-[stars-url]: https://github.com/andrefdre/Dora_the_mug_finder_SAVI/stargazers
-[issues-shield]: https://img.shields.io/github/issues/andrefdre/Dora_the_mug_finder_SAVI.svg?style=for-the-badge
-[issues-url]: https://github.com/andrefdre/Dora_the_mug_finder_SAVI/issues
-[license-shield]: https://img.shields.io/github/license/andrefdre/Dora_the_mug_finder_SAVI.svg?style=for-the-badge
-[license-url]: https://github.com/andrefdre/Dora_the_mug_finder_SAVI/blob/master/LICENSE.txt
-[product-screenshot]: Docs/logo.svg
+[contributors-shield]: https://github.com/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
+[contributors-url]: https://github.com/fabio-rcs/CYCLOGARD/graphs/contributors
+[forks-shield]: https://github.com/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
+[forks-url]: https://github.com/fabio-rcs/CYCLOGARD/network/members
+[stars-shield]: https://github.com/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
+[stars-url]: https://github.com/fabio-rcs/CYCLOGARD/stargazers
+[issues-shield]: https://github.com/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
+[issues-url]: https://github.com/fabio-rcs/CYCLOGARD/issues
+[license-shield]: https://github.com/fabio-rcs/CYCLOGARD.svg?style=for-the-badge
+[license-url]: https://github.com/fabio-rcs/CYCLOGARD/blob/master/LICENSE.txt
+[product-screenshot]: Docs/logo.png
