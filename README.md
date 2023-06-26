@@ -102,7 +102,7 @@ For the class Automation Systems Project, we were challenged to create a system 
 
 
 ### Prerequisites
-You need to install Arduino IDE or other IDE and install the [New Ping](https://www.arduino.cc/reference/en/libraries/newping/) library. 
+You need to install [Arduino IDE](https://www.arduino.cc/en/software) or other IDE and install the [New Ping](https://www.arduino.cc/reference/en/libraries/newping/) library. 
 
 ### Installation
 To install the project, clone the repository using a GitHub manager or by running the following lines:
