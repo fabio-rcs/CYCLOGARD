@@ -186,7 +186,7 @@ void loop()
     distance_check();
 
     // Make sure the array is big enough to store all the values
-    char msg_send[8];
+    char msg_send[9];
 
     // Assign each msg character to a space in the array
     msg_dist.toCharArray(msg_send, 8);
