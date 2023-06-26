@@ -102,7 +102,7 @@ For the class Automation Systems Project, we were challenged to create a system 
 
 
 ### Prerequisites
-
+You need to install Arduino IDE or other IDE and install the [New Ping](https://www.arduino.cc/reference/en/libraries/newping/) library. 
 
 ### Installation
 To install the project, clone the repository using a GitHub manager or by running the following lines:
@@ -112,7 +112,7 @@ git clone https://github.com/fabio-rcs/CYCLOGARD.git
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
+To use, you can install the apk of the android app and upload the `.ino` code to your microcontroller. There are a lot of versions of this code, but the final version is the BLE_updatable. 
 
 <!-- CONTRIBUTING -->
 ## Contributing
