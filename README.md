@@ -113,6 +113,43 @@ git clone https://github.com/fabio-rcs/CYCLOGARD.git
 <!-- USAGE EXAMPLES -->
 ## Usage
 To use, you can install the apk of the android app and upload the `.ino` code to your microcontroller. There are a lot of versions of this code, but the final version is the [BLE_updatable](https://github.com/fabio-rcs/CYCLOGARD/blob/main/ESP/ESP_BLE_updatable/ESP_BLE_updatable.ino). 
+The bluetooth specifications of the ESP32 as a bluetooth device are:
+
+Name: "CYCLOGARD"
+Service UUID: "6E400001-B5A3-F393-E0A9-E50E24DCCA9E"
+
+Distance_1, distance_2 and the bool will be sent through here in the format "111;222;b"
+
+CHARACTERISTIC_UUID_TX: "6E400003-B5A3-F393-E0A9-E50E24DCCA9E"
+
+Commands will be received through here:
+
+CHARACTERISTIC_UUID_RX: "6E400003-B5A3-F393-E0A9-E50E24DCCA9E"
+
+It's supposed to be the boolean variable that tells the android app to take a picture. This boolean will have the value "1" when there's a car in the threshold distance and "0" otherwise.
+It's possible to activate or deactivate the LED and the horn with the following commands via bluetooth:
+
+Leter "A" activates the LED;
+
+Letter "B" deactivates the LED;
+
+Letter "C" activates the horn;
+
+Letter "D" deactivates the horn.
+
+
+The database has the following characteristics:
+
+Table name: 	CYCLOGARD
+
+Fields:		
+
+    id  -> id is automatic
+    datetime  -> send as yyyy-MM-dd hh:mm:ss
+    gps  -> localization to be sent
+    link  -> link to the picture 
+    distance  -> mean or minimum distance of the ocurrence
+			
 
 <!-- CONTRIBUTING -->
 ## Contributing
